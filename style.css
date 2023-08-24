@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --colorDark1: #112D4E;
+    --colorDrak2:#3F72AF;
+    --colorLight1:#DBE2EF;
+    --colorLight2:#F9F7F7;
+
+}
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color:var(--colorLight2);
+    background-image: linear-gradient(160deg,#112d4e 0% ,#3f73af 100%);
+
+
+
+
+
+}
+
+h1{
+
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+   
+
+}
+
+.tap-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+}
+
+.tab{
+
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+
+}
+.tab.current-tab{
+
+    background-color: rgba(219,226,239,0.5);
+    border-radius: 4px;
+}
+
+
+.weather-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 4rem; 
+} 
+
+
+.btn{
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+ background-color:var(--colorDrak2);
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.sub-container{
+
+    
+    display: flex;
+
+    flex-direction: column;
+ align-items: center;
+
+
+}
+
+.grant-location-container{
+     display: none;
+}
+
+.grant-location-container.active{
+
+    display:contents;
+
+}
+
+.heading-grant{
+    margin-top: 2rem;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+.subheading-grant{
+margin: 1.5rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.loading-container{
+    display: none;
+}
+
+.loading-container.active{
+
+    display: contents;
+}
+
+.user-info-container{
+    display: none;
+}
+.user-info-container.active{
+    display: contents;
+}
+
+.name{
+
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom:2rem ;
+
+}
+
+.name p{
+
+    font-size: 2rem;
+}
+
+.name img{
+
+    width: 30px;
+    height: 30px;
+    
+}
+.weatherdesc{
+
+    font-size: 1.5rem;
+    font-weight: 200;
+
+}
+.weathericon{
+
+    width: 90px;
+    height: 90px;
+    
+}
+.temperature{
+ 
+    font-size: 2.75rem;
+    font-weight: 700;
+
+}
+
+
+.parameter-container{
+
+    display: flex;
+     gap: 10px 40px;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.parameter{
+
+    width: 30%; 
+    max-width: 200px;
+    background-color:rgba(219,226,239,0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    font-size: 20px;
+    gap: 5px 0;
+
+
+
+
+}
+
+.parameter img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.parameter p:first-of-type{
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.parameter p:last-of-type{
+    font-size: 1rem;
+    font-weight: 200;
+    
+}
+
+.form-style{
+    display: none;
+
+    width: 90%;
+    max-width: 550px;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom:3rem;
+     
+
+}
+.form-container{
+    display: none;
+    
+
+}
+
+.form-container.active{
+
+    display: contents;
+}
+
+.form-container input{
+
+ 
+    width:calc(50%);
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(219,226,239,0.5);
+    
+   
+
+}
+.form-container input::placeholder{
+
+    color: rgba(255,255,255,0.7);;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.form-container input:focus{
+
+    outline: 3px solid rgba(255,255,255,0.7);
+
+}
+
+
+
+.form-container .btn{
+
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: unset;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.api-error-container {
+    display: none;
+}
+
+.api-error-container.active {
+    display: flex;
+    gap: 1rem 0;
+}
+
+.api-error-container p {
+    text-align: center;
+}
+
+.api-error-container img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
