@@ -10,6 +10,7 @@ const apiErrorContainer = document.querySelector(".api-error-container");
 const apiErrorImg = document.querySelector("[data-notFoundImg]");
 const apiErrorMessage = document.querySelector("[data-apiErrorText]");
 const apiErrorBtn = document.querySelector("[data-apiErrorBtn]");
+const retry = document.querySelector(".ahaan");
 
 
 let currentTab = userTab;
@@ -252,12 +253,24 @@ searchForm.addEventListener("submit" ,(e)=>{
     
 catch(error){
     loadingScreen.classList.remove("active");
+    searchForm.classList.remove("active");
     apiErrorContainer.classList.add("active");
+   
+           
     apiErrorMessage.innerText = `${error?.message}`;
     apiErrorBtn.style.display = "none";
     }
 }
 
  
+retry.addEventListener("click",clickretry);
+
+function clickretry(){
+
+    searchForm.classList.add("active");
+    apiErrorContainer.classList.remove("active");
+
+
+}
 
 

@@ -304,11 +304,25 @@ margin: 1.5rem;
 .api-error-container img {
     width: 100%;
     max-width: 300px;
-    aspect-ratio: 1 / 1;
+    /* aspect-ratio: 1 / 1; */
     object-fit: cover;
 }
 
+.api-error-container button{
+
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
     
+.ahaan{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 
